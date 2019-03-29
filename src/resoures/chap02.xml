@@ -9,4 +9,16 @@
 
 	<bean id="greeter" class="com.ljy.jdbc.spring.Greeter" />
 
+	<bean id="memberDao" class="org.ljy.book.example.MemberDao" />
+
+	<bean id="articleService"
+		class="org.ljy.book.example.ArticleService">
+		<property name="memberDao" ref="memberDao" />
+	</bean>
+
+	<bean id="memberService"
+		class="org.ljy.book.example.MemberService">
+		<property name="memberDao" ref="memberDao" />
+	</bean>
+
 </beans>

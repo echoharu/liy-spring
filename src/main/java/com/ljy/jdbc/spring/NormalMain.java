@@ -3,11 +3,14 @@ package com.ljy.jdbc.spring;
 public class NormalMain {
 
 	public static void main(String[] args) {
-		Greeter g1 = new Greeter();
-		System.out.println(g1.greet());
-
-		Greeter g2 = new Greeter();
-		System.out.println(g2.greet());
-
+		Greeter greeter = new Greeter();
+		System.out.println(greeter.greet());
+		
+		Greeter greeter1 = new Greeter();
+		System.out.println(greeter1.greet());
+		
+		Greeter greeter2 = new Greeter();
+		System.out.println(greeter2.greet());
+		
 	}
 }
